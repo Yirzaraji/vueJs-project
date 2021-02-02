@@ -74,69 +74,85 @@
 
 
  
-  <div v-show="questionIndex === quiz.questions.length">
-  </div>
-  <!-- Affiche les resultats Modif-->
-  <div  class="reponseScore" v-show="questionIndex === quiz.questions.length">     
-    <div class="superDivQuest">
-      <div class="finalScore">     
-        <div class="textFinalScore">
-          <h2>
-              <img src="images/rond.png"  id="circle" alt="redcircle">
-                Votre niveau
-          </h2>
-        </div>
-        <div class="scoreContainer">
-          <div id="Master">
-            <div class="iconScore">
-              <img src="images/levelStar.png">
-              <img src="images/levelStar.png">
-              <img src="images/levelStar.png">
-              <img src="images/levelStar.png">
-            </div>
-            <div class="textScore">
-            {{ showScore() }}
-            </div>
+          <div v-show="questionIndex === quiz.questions.length">
+          
+           
+          
           </div>
 
-          <div id="avance">
-            <div class="iconScore">
-              <img src="images/levelStar.png">
-              <img src="images/levelStar.png">
-              <img src="images/levelStar.png">
-            </div>
-            <div class="textScore">
-            {{ showScore() }}
-            </div>
-          </div>
+                        <!-- Affiche les resultats Modif-->
+                    <div  class="reponseScore" v-show="questionIndex === quiz.questions.length">     
+                      <div class="superDivQuest">
+                        <div class="finalScore"> 
 
-          <div id="intermediaire">
-            <div class="iconScore">
-              <img src="images/levelStar.png">
-              <img src="images/levelStar.png">
-            </div>
-            <div class="textScore">
-            {{ showScore() }}
-            </div>
-          </div>
+                            
+                                  
+                            <div class="textFinalScore">
+                              <h2>
+                                 <img src="images/rond.png"  id="circle" alt="redcircle">
+                                   Votre niveau
+                              </h2>
+                            </div>
 
-          <div id="debutant">
-            <div class="iconScore">
-              <img src="images/levelStar.png">
-            </div>
-            <div class="textScore">
-            {{ showScore() }}
-            </div>
-          </div>
-          <a href="level.php">
-            <div class="buttonsScore">
-              <img src="images/jeux.png" alt="Logo Jeux"> | VOIR LES JEUX
-            </div>            
-          </a>
-        </div><!-- fin Div ScoreContainer -->
-      </div><!-- fin finalScore -->
-    </div><!-- fin superdivQuest -->
-  </div><!-- fin vueJs div reponseScore -->
+                                 
+                                
+                            <div class="scoreContainer">
+                                 
+                                  <div id="Master">
+                                    <div class="iconScore">
+                                      <img src="images/levelStar.png">
+                                      <img src="images/levelStar.png">
+                                      <img src="images/levelStar.png">
+                                      <img src="images/levelStar.png">
+                                    </div>
+                                    <div class="textScore">
+                                    {{ showScore() }}
+                                    </div>
+                                  </div>
+
+                                  <div id="avance">
+                                    <div class="iconScore">
+                                      <img src="images/levelStar.png">
+                                      <img src="images/levelStar.png">
+                                      <img src="images/levelStar.png">
+                                    </div>
+                                    <div class="textScore">
+                                    {{ showScore() }}
+                                    </div>
+                                  </div>
+
+                                  <div id="intermediaire">
+                                    <div class="iconScore">
+                                      <img src="images/levelStar.png">
+                                      <img src="images/levelStar.png">
+                                    </div>
+                                    <div class="textScore">
+                                    {{ showScore() }}
+                                    </div>
+                                  </div>
+
+                                  <div id="debutant">
+                                    <div class="iconScore">
+                                      <img src="images/levelStar.png">
+                                    </div>
+                                    <div class="textScore">
+                                    {{ showScore() }}
+                                    </div>
+                                  </div>
+                               
+                                
+
+                                <a href="level.php">
+                                  <div class="buttonsScore">
+                                    <img src="images/jeux.png" alt="Logo Jeux"> | VOIR LES JEUX
+                                  </div>            
+                                </a>
+
+                                
+                            </div><!-- fin Div ScoreContainer -->
+                        </div><!-- fin finalScore -->
+                      </div><!-- fin superdivQuest -->
+                    </div><!-- fin vueJs div reponseScore -->
                     
 
 
